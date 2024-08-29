@@ -66,14 +66,15 @@
     background-color: #00d3b4;
     max-width: 1000px;
     padding: 70px;
-    padding-right: 40px; /* Adjust the padding on the right side as needed */
     color: white;
     margin: 30px auto;
     display: flex;
-    flex-direction: column; /* Stack elements vertically */
-    align-items: flex-start; /* Align items to the left */
-    text-align: left; /* Ensure text aligns left */
+    flex-direction: column;
+    align-items: flex-start; /* Aligns content to the left */
+    text-align: left;
+    position: relative; /* Allows absolute positioning of the button */
 }
+
 
 .assistance .content {
     flex: 1;
@@ -89,16 +90,18 @@
     padding: 0;
 }
 .assistance .contact-btn {
-            background-color: white;
-            color: #00d3b4;
-            padding: 10px 20px;
-            border-radius: 5px;
-            text-decoration: none;
-            display: inline-block;
-            font-weight: bold;
-            margin-top: 20px; /* Space between the text and button */
-            margin-left: 750px; /* Move button to the left */
-        }
+    background-color: white;
+    color: #00d3b4;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: bold;
+    position: absolute;  /* Absolute positioning */
+    right: 300px;            /* Aligns to the right side */
+    top: 65%;            /* Centers vertically */
+    transform: translateY(-90%); /* Ensures vertical centering */
+}
 .footer {
     background-color: #D81C2B;
     text-align: center;
@@ -142,19 +145,19 @@ div {
 
         <div class="content">
             <h1>Hello [Recipient's Name],</h1>
-            <p>Thank you for registering for the TixBox newsletter! As one of our early subscribers,</p>
-            <p> you'll be among the first to access tickets for all upcoming events.</p>
-            <p>Best regards,<br>
+            <p>Thank you for registering for the TixBox newsletter! As one of our early subscribers,
+                you'll be among the first to access tickets for all upcoming events.</p>
+                <p><b>Best regards,<br></b>
                TixBox Team</p>
         </div>
         
         <div class="assistance">
-            <h2>Need Assistance?</h2>
+            <h1>Need Assistance?</h1>
             <p>For any inquiries or assistance, please contact </p>
-            <p>our customer support team at:</p>
-            <a href="mailto:support@tixbox.com" class="contact-btn">Contact us</a>
-            <p>Phone: +971 4 271 3736<br>
+            <p>our customer support team at:</p><br>
+           <p>Phone: +971 4 271 3736<br>
                Email: <a href="mailto:support@tixbox.com">support@tixbox.com</a></p>
+               <a href="mailto:support@tixbox.com" class="contact-btn">Contact us</a>
         </div>
         
         
